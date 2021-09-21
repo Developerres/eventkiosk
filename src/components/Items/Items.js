@@ -15,12 +15,9 @@ const Items = ({ data }) => {
   );
 
   // Events sorted by category
-  const currentActiveEventsByCategory = [...currentActiveEvents].sort(function (
-    a,
-    b
-  ) {
-    return a.category - b.category;
-  });
+  const currentActiveEventsByCategory = [...currentActiveEvents].sort(
+    (a, b) => a.category - b.category
+  );
 
   return (
     <Container>
